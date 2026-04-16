@@ -1,0 +1,12 @@
+services:
+  meeting-bot:
+    build: .
+    container_name: meeting-bot
+    stdin_open: true
+    tty: true
+    environment:
+      - OPENAI_API_KEY={REPLACE_WITH_YOUR_API_KEY}
+    volumes:
+      - ./audio_files:/app/audio_files
+      - ./summarys:/app/summarys
+    working_dir: /app
