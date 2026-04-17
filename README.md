@@ -51,6 +51,19 @@ docker compose up
 
 3. Check `summarys/` for generated markdown summaries.
 
+## output
+
+```bash
+$ docker compose up
+Attaching to meeting-bot
+meeting-bot  | Loading Whisper model...
+meeting-bot  | Found 1 files.
+meeting-bot  | 🎧 Processing: harvard.wav
+meeting-bot  | ✅ Done: harvard.wav
+meeting-bot  | 
+meeting-bot  | 🎉 All tasks finished!
+```
+
 ## Notes
 
 - Supported audio formats: `.mp3`, `.wav`, `.m4a`
